@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Itim", cursive;
+
+}
+
+section {
+    padding: 6rem 5rem 0;
+}
+
+/* body {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+} */
+
+/* class navbar */
+nav {
+    display: flex;
+    height: 5rem;
+    padding: 0 2rem;
+    /* border: solid 3px rgb(0, 255, 234); */
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav .nav-logo {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+nav .nav-item .nav-list {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-item .nav-list ul {
+    display: flex;
+}
+
+nav .nav-item .nav-list ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+
+nav .nav-item .nav-list ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+nav .nav-item .nav-list ul li a:hover {
+    color: darkturquoise;
+    text-decoration: darkturquoise;
+}
+
+nav .nav-item .nav-list .button {
+    text-decoration: none;
+    background-color: darkturquoise;
+    padding: 5px 7px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav .nav-item .nav-list .button:hover {
+    color: black;
+}
+
+
+
+/* class home */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.home .title {
+    width: 26rem;
+}
+
+.home .title .welcome {
+    font-size: 1.5rem;
+}
+
+.home .title .welcome span {
+    color: darkturquoise;
+}
+
+.home .title .introduction {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+.home .title .introduction span {
+    color: darkturquoise;
+}
+
+.home .title .description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.home .title .button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.home .title .button a {
+    border: solid aqua 3px;
+    border-radius: 4rem;
+    margin-right: 25px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+    background-color: darkturquoise;
+}
+
+.home .title .button a:hover {
+    color: black;
+}
+
+.home .title .button .download {
+    color: white;
+}
+
+.home .home-image {
+    width: 25rem;
+}
+
+.home .home-image img {
+    width: 100;
+    border-radius: 50%;
+    border: solid gray 5px;
+    /* opacity: ; */
+}
+
+
+
+/* class about me */
+.about-me {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    padding: 7rem 2rem;
+    margin-top: 50px;
+}
+
+.about-me .profile-image img {
+    width: 65%;
+    height: 100%;
+    border-radius: 60%;
+    object-fit: cover;
+    border: solid gray 5px;
+}
+
+.about-me .content {
+    flex: 2;
+}
+
+.about-me .content h3 {
+    color: darkturquoise;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.about-me .content h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-me .content h1 span {
+    color: darkturquoise;
+}
+
+.about-me .content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.about-me .content .buttons {
+    margin-top: 20px;
+}
+
+.about-me .content .buttons button {
+    background-color: darkturquoise;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: large;
+    border-radius: 16rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about-me .content .buttons button:hover {
+    color: black;
+}
+
+.about-me .content .skills {
+    margin-top: 30px;
+}
+
+.about-me .content .skills .skill {
+    margin-bottom: 15px;
+}
+
+.about-me .content .skills .skill p {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-me .content .skills .skill .progress-bar {
+    background-color: black;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-me .content .skills .skill .progress-bar .progress {
+    background-color: darkturquoise;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* class services */
+.services {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 37rem;
+}
+
+.services .title h6 {
+    color: darkturquoise;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.services .title h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.services .title h1 span {
+    color: darkturquoise;
+}
+
+.services .content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.services .content .card {
+    width: 18rem;
+    height: 18rem;
+    border: solid gray 3px;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 5rem 0;
+    transition: 0.5s;
+}
+
+.services .content .card:hover {
+    background-color: darkturquoise;
+}
+
+
+.services .content .card .bx-network-chart {
+    color: darkturquoise;
+    font-size: 4rem;
+    transition: 0.7s;
+}
+
+.services .content .card:hover .bx-network-chart {
+    color: white;
+}
+
+
+.services .content .card h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.services .content .card p {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-size: 12px;
+    transition: 0.8s;
+}
+
+.services .content .card:hover p {
+    color: white;
+}
+
+
+.services .content .card a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: darkturquoise;
+    transition: 0.9s;
+}
+
+.services .content .card:hover a {
+    color: white;
+}
+
+
+.services .content .card a i {
+    margin-left: 5px;
+}
+
+/* class certificate */
+.certificate-section {
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.text-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text-header h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: darkturquoise;
+}
+
+.text-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-header h2 span {
+    color: darkturquoise;
+}
+
+.certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 7rem;
+}
+
+.certificate-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.certificate-item img {
+    width: 100%;
+    border: solid gray 3px;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.certificate-item img:hover {
+    /* mengatur gerak foto */
+    transform: scale(1.05);
+}
+
+/* class footer  */
+.custom-footer {
+    background-color: darkturquoise;
+    color: white;
+    padding: 15px 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.custom-footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-footer .footer-container .footer-logo span {
+    font-weight: 700;
+}
+
+.custom-footer .footer-container .social-icons a {
+    color: white;
+}
